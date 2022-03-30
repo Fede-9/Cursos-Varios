@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 
+    DPR (Device Pixel Ratio)
+        Es la relación que existe entre los píxeles reales que tiene el dispositivo y los píxeles que tenemos disponibles para "pintar" contenido
+
+    DPR = pixeles reales / pixeles disponibles
+
+ -->
+<body>
+    <h1>Contenido embebido</h1>
+<!--Para optimizar contenido si es para movil o escritorio-->
+<!--Si el navegador no soporta webp utilizamos src para poder cargar la imagen-->
+    <img srcset="/contenido-embebido/assets/images/portada.webp, /contenido-embebido/assets/images/portada.jpg, /contenido-embebido/assets/images/portada-mobile.jpg 3x"
+    src="/contenido-embebido/assets/images/portada.jpg" alt="imagen de portada">
+
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contenido embebido</h1>
+<!--funciona similar al atributo srcset -->
+    
+    <picture>
+        <!-- <source srcset="/contenido-embebido/assets/images/portada.webp, /contenido-embebido/assets/images/portada.jpg"> -->
+
+        <source srcset="/contenido-embebido/assets/images/portada-mobile.webp, /contenido-embebido/assets/images/portada-mobile.jpg" media="(max-width:1200px)">
+        <img src="/contenido-embebido/assets/images/portada.jpg" alt="Imagen de portada">
+    </picture>
+    
+</body>
+</html>

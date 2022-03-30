@@ -1,0 +1,252 @@
+/* ---------------------------------------------- SELECTORES ------------------------- */
+/* Para seleccionar un id usamos el numeral */
+#titulo{    
+    color: tomato;
+}
+
+/* Para seleccionar una clase utilizamos el punto */
+.texto{
+    color: slateblue;
+}
+
+/* Aca le indicamos que a todos las etiquetas de p que contengan tambien una clase de texto que le asigne ese color */
+p.texto{
+    color:brown;
+}
+
+p.especial{
+    color: darkgreen;
+}
+
+/* seleccionamos la etiqueta p que se encuentra del div */
+div p{
+    color: aquamarine;
+}
+
+div h2, div h3{
+    color: brown;
+}
+
+
+/* seleccionamos todo y le indicamos el tamaño de fuente que queremos */
+/* selector universal */
+
+*{
+    font-size: 24px;
+    /* color: black; */
+}
+
+
+/* --------------- FORMAS DE DAR COLOR --------------------- */
+
+/* 
+.color{
+    color: #ff0000;
+}
+.color{
+    color: rgb(red, green, blue);
+} */
+
+
+
+/* --------------- BORDES ---------------- */
+
+.color{
+    /*border: 5px red double;
+    *//*dotteddasheddsoliddoublegrooveridgeinsetoutsetnonehidden*/border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2rem ;
+    
+}
+
+
+/* ------------------- Background ---------------- */
+#fondo{
+    background-color: rgba(255,0,0);
+    /* opacity: 0.3; para darle transparencia*/
+    height: 200px;
+    background-image: url('coffee.png');
+    /* background-size: 100px 100px; */
+    /* para que no se repita la imagen */
+    /* background-repeat: no-repeat; */
+    /* para que se repita en el eje horizontal */
+    /* background-repeat: repeat-x; */
+    /* para que se repita en el vertical */
+    /* background-repeat: repeat-y;
+    background-position: center top; */
+    background: #f00 url('coffee.png') repeat-y center bottom /100px 100px;
+    
+}
+
+
+
+/* ------------------- Box model, margin, padding, overflow ----------------- */
+/* -------------------- outline, text-align, text-decoration, text-shadow ----------------- */
+
+.margen{
+    background-color: chocolate;
+    /* espacios por fuera del elemento */
+    margin: 15px;
+    /* espacios por dentro del elemento */
+    padding: 30px 15px 5px;
+    /* se ubica entre wl margin y el padding */
+    border: solid 1px black;
+    height: 200px;
+    width: 50px;
+    overflow: scroll;
+    outline: 1px solid red;
+}
+
+.text{
+    /* fuente del texto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* text-align: center; */
+    /* text-align: right; */
+    /* text-align: left; */
+    text-align: justify;
+    /* subrayado */
+    text-decoration: underline;
+    /* linea que tacha el texto */
+    /* text-decoration: line-through; */
+    /* linea sobre el texto */
+    /* text-decoration: overline; */
+    /* sombra del texto */
+    text-shadow: 3px 5px 5px blue;
+}
+
+
+
+/* -------------------------- Links y sus estados ------------------------ */
+/* IMPORTANTE: SEGUIR SIEMPRE ESTE ORDEN */
+a:link{
+    color: blueviolet;
+}
+
+/* me muestra si yavisite el sitio */
+a:visited{
+    color: gray;
+}
+
+/* cuando me posiciono sobre el cambia de color */
+a:hover{
+    color: yellow;
+}
+
+/* me muestra si esta activo  */
+a:active{
+    color: red;
+}
+
+ul{
+    background-color: cyan;
+    /* para quitar los puntos de los elemtos */
+    list-style-type: georgian;
+    padding-left: 0;
+    /* muevo los puntos un poco para adentro */
+    list-style-position: inside;
+}
+
+
+/* -------------------- Tablas --------------------- */
+
+table{
+    width: 100%;
+    /* para eliminar los espacios entre las celdas */
+    border-collapse: collapse;
+}
+
+th, td{
+    border: solid 1px #eee;
+    padding: 5px;
+}
+
+th{
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+/* para darle un color a los impares */
+tr:nth-child(even){
+    background-color: #eee;
+}
+
+tr:hover{
+    background-color: #aaa;
+    /* me muestra la manito cuando estoy sobra la tabla */
+    cursor: pointer;
+
+}
+
+
+
+/* --------------------------- Display, max-width y position ---------------------- */
+
+span{
+    /* para darle salto de linea */
+    display: block;
+
+    /* desaparece los elementos */
+    /* display: none; */
+
+    max-width: 300px;
+    background-color: #f00;
+}
+
+.inline{
+    /* omite el salto de linea, los ubica uno alado del otro */
+    display: inline;
+}
+
+#position{
+    position: sticky;
+    left: 20px;
+    top: 25px;
+
+}
+
+/* ------------------- float ---------------------- */
+
+.left{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.right{
+    float: right;
+}
+
+.container{
+    height: 200px;
+}
+
+.column{
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+    
+}
+
+
+/* -------------------------------- inline-block ------------- */
+
+.inline-block{
+    display: inline-block;
+    height: 55px;
+    background-color: red;
+}
+
+
+/* --------------------- Centrar un elemento ------------------ */
+/* IMPORTANTE: para centrar un elemto siempre hay que darle un Ancho pero nunca tiene que ser del 100% */
+
+.center{
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+
+}
