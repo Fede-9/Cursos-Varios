@@ -4,8 +4,9 @@ Curso Creado por: Estefania Cassingena Navone (@EstefaniaCassN).
 Tema: Manipular arreglos con .shift().
 */
 
-var estaciones = ["Invierno", "Otoño", "Primavera"]; 
+let estaciones = ["Invierno", "Otoño", "Primavera"]; 
 
-estaciones.shift();  // Remover primer elemento del arreglo y tambien lo retorna 
+let elementoBorrado = estaciones.shift();  // elimina el primer elemento del arreglo y tambien lo retorna 
 
 console.log(estaciones);
+console.log(`El elemeto borrado es: ${elementoBorrado}`);

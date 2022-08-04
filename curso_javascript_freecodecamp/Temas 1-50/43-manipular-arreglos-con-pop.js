@@ -8,7 +8,7 @@ var estaciones;
 
 estaciones = ["Invierno", "Otoño", "Primavera", "Verano"];
 
-estacion = estaciones.pop(); //elimina el ultimo elemento y lo devuelve
+estacionEliminada = estaciones.pop(); //elimina el ultimo elemento y lo devuelve
 
 console.log(estaciones);
-console.log('El elemento eliminado es: ',estacion);
+console.log('El elemento eliminado es: ',estacionEliminada);

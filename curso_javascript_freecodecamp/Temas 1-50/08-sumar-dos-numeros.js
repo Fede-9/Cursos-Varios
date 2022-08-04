@@ -11,3 +11,4 @@ var n2 = 5;
 
 console.log(suma);
 console.log('La suma de los números es: ',n1+n2)
+console.log(`La suma es: ${n1+n2}`)

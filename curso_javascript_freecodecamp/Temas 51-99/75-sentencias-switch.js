@@ -43,3 +43,28 @@ switch (producto) {
     console.log("El helado cuesta $2.8");
     break;
 }
+
+
+// Ejemplo
+
+var frase = '';
+var musico = '';
+
+switch(musico){
+  
+    case 'Axl':
+      frase = 'Es axel pendejo'
+      break;
+    
+    case 'Gerard':
+      frase = 'Es gerard pendejo'
+      break;
+
+    case 'Lucas':
+      frase = 'Es lucas pendejo'
+      break;
+
+    default:
+      frase = 'Nada que decir....'
+}
+console.log(frase);

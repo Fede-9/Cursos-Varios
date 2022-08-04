@@ -11,11 +11,11 @@ const usuario = {
 };
 
 // Forma anterior de asignar las propiedades a variables
-const nombre = usuario.nombre;
-const edad = usuario.edad;
+const nombre1 = usuario.nombre;
+const edad1 = usuario.edad;
 
 // En ES6
-const {nombre, edad} = usuario;
+const {nombre2, edad2} = usuario;
 
 // Ejemplo
 

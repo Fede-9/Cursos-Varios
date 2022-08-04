@@ -4,7 +4,7 @@ Curso Creado por: Estefania Cassingena Navone (@EstefaniaCassN).
 Tema: Multiplicar dos números con JavaScript.
 */
 
-var producto = 5 * 3;
+const producto = 5 * 3;
 console.log(producto);
 
 producto = 9 * 0;

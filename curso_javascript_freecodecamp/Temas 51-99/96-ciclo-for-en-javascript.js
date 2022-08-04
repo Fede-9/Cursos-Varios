@@ -10,7 +10,7 @@ Tema: Ciclo "for" en JavaScript.
 var miArreglo = [];
 
 // Lo primero es inicializar el valor de una variable, luego la condicion y por ultimo le decimos como actualizar la variable en cada vuelta.
-for (var i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   miArreglo.push(i);
 }
 
@@ -20,7 +20,7 @@ console.log(miArreglo);
 
 var miArreglo = [];
 
-for (var i = 0; i < 10; i += 2) {
+for (let i = 0; i < 10; i += 2) {
   miArreglo.push("A");
 }
 

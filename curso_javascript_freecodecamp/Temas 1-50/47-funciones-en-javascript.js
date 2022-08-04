@@ -15,3 +15,10 @@ mostrarMensaje();
 mostrarMensaje();
 mostrarMensaje();
 
+
+
+const mensaje = function(){
+  console.log('holaaaaaaaaaa')
+}
+
+mensaje()

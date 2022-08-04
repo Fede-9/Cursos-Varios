@@ -16,3 +16,4 @@ console.log(datos);
 
 // Accediendo a las arrays anidados por sunindice
 console.log(datos[1])
+console.log(datos[1][0])
